@@ -11,6 +11,7 @@ const topicsSlice = createSlice({
             state.topics[action.payload.id]['quizIds'] = [];
         },
         addQuizId(state, action) {
+            console.log('addQuizId recieved the following payload: ', action.payload);
             state.topics[action.payload.topicId].quizIds.push(action.payload.quizId);
     }
 }})

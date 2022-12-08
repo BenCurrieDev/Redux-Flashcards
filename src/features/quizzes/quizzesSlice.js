@@ -8,6 +8,7 @@ const quizzesSlice = createSlice({
     initialState,
     reducers: {
         addQuiz(state, action) {
+            console.log('addQuiz recieved the following payload: ', action.payload);
             state.quizzes[action.payload.id] = action.payload;
         }
     }
