@@ -17,7 +17,7 @@ export default function NewQuizForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (name.length === 0) {
+    if (name.length === 0 || topicId === '') {
       return;
     }
 
