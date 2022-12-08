@@ -1,7 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { useDispatch } from "react-redux";
 import { addQuizId } from "../topics/topicsSlice";
-const dispatch = useDispatch()
 
 const initialState = { quizzes: {} };
 
